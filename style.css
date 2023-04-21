@@ -226,7 +226,7 @@ nav ul li a:hover {
 
 .box {
     width: 370px;
-    height: 370px;
+    /* height: 370px; */
     background-color: #191919;
     border-radius: 30px;
     position: relative;
