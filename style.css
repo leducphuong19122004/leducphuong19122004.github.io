@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container-header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/image_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #f9004d;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    transform: 0.4s;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+}
+
+.btn-subcribe {
+    padding: 15px 30px;
+    background-color: #f9004d;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.7s;
+}
+
+.btn-subcribe:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.introduce-container {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.introduce-container h1 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 70px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.introduce-container h1 span {
+    color: #f9004d;
+}
+
+.introduce-container h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.7;
+    letter-spacing: 1px;
+
+}
+
+.introduce-container h3 {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.email {
+    width: 465px;
+    height: 45px;
+    border-radius: 30px;
+    padding-left: 20px;
+    border: 1px solid #f9004d;
+    font-weight: bold;
+    outline: none;
+}
+
+.btn-let_start {
+    text-decoration: none;
+    margin-left: -100px;
+    background-color: #f9004d;
+    border-radius: 30px;
+    width: 90px;
+    height: 37px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* style for about me */
+.about-me-container {
+    width: 100%;
+    background-color: #191919;
+    padding: 100px 0px;
+}
+
+.image_2 {
+    width: 670px;
+    height: auto;
+}
+
+.about-me-container .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1430px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.content-about-me {
+    width: 500px;
+}
+
+.content-about-me h1 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.content-about-me h3 {
+    color: #f9004d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.content-about-me p {
+    color: #fff;
+    opacity: 0.7;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.btn-lettalk {
+    background-color: #f9004d;
+    border-radius: 30px;
+    width: 90px;
+    height: 37px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.btn-lettalk:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+/* skills  */
+.skills-container {
+    width: 100%;
+    padding: 150px 0px;
+    background-color: #101010;
+}
+
+.skills-main {
+    width: 1430px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.skills-heading {
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box {
+    width: 370px;
+    height: 370px;
+    background-color: #191919;
+    border-radius: 30px;
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.box img {
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.content-box {
+    text-align: center;
+    overflow: hidden;
+}
+
+.content-box p {
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.content-box button {
+    background-color: #f9004d;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.content-box button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+/* style hire me */
+.hire-me-container {
+    width: 100%;
+    background-color: #191919;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.hire-me-container h2 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.hire-me-container button {
+    background-color: #f9004d;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.hire-me-container button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+/* style contact me */
+.contact-me-container {
+    width: 100%;
+    background-color: #101010;
+    padding: 100px 0px 30px 0px;
+    text-align: center;
+}
+
+.contact-me-container h2 {
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.content-contact-me p {
+    color: #fff;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact-icons img {
+    width: 45px;
+    cursor: pointer;
+    margin: 15px;
+    transition: transform 0.6s;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.2);
+}
