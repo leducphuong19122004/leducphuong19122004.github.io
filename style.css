@@ -84,10 +84,11 @@ nav ul li a:hover {
     cursor: pointer;
     width: 35px;
     height: 35px;
-    margin: 0px 20px;
+    margin: 3px 20px 0px 20px;
 }
 
 .menu-dropdown {
+    position: relative;
     width: 100%;
     background-color: #191919;
     height: 240px;
@@ -95,7 +96,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     transition: height .4s ease;
-    z-index: 120;
+    z-index: 9998;
     display: none;
 }
 
