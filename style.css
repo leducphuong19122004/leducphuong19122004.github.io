@@ -16,9 +16,9 @@
 
 .header {
     padding-top: 30px;
-    padding-bottom: 50px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 3%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,6 +68,57 @@ nav ul li a:hover {
     transform: scale(1.15, 1.15);
 }
 
+.header div {
+    display: flex;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    width: 50px;
+    margin: 0px 20px;
+}
+
+.close {
+    display: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin: 0px 20px;
+}
+
+.menu-dropdown {
+    width: 100%;
+    background-color: #191919;
+    height: 240px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: height .4s ease;
+    z-index: 120;
+    display: none;
+}
+
+.menu-dropdown a:first-child {
+    margin-top: 20px;
+}
+
+.link {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.link:hover {
+    background-color: white;
+    color: #f9004d;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
 .introduce-container {
     position: absolute;
     top: 50%;
@@ -104,8 +155,13 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-.email {
+.form form {
     width: 465px;
+    position: relative;
+}
+
+.email {
+    width: 100%;
     height: 45px;
     border-radius: 30px;
     padding-left: 20px;
@@ -115,8 +171,9 @@ nav ul li a:hover {
 }
 
 .btn-let_start {
-    text-decoration: none;
-    margin-left: -100px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
     background-color: #f9004d;
     border-radius: 30px;
     width: 90px;
@@ -343,4 +400,152 @@ nav ul li a:hover {
 
 .contact-icons img:hover {
     transform: scale(1.2);
+}
+
+.read-more-text {
+    display: none;
+}
+
+/* laptop  */
+@media (max-width: 1400px) and (min-width: 1300px) {
+    .image_2 {
+        width: 550px;
+    }
+
+    .content-about-me h1 {
+        font-size: 90px;
+    }
+}
+
+/* ipad */
+@media (max-width: 1300px) {
+    .nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .image_2 {
+        display: none;
+    }
+
+    .skills-content {
+        flex-direction: column;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+
+    .skills-container {
+        padding: 100px 0px;
+    }
+
+    .header {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width:800px) and (min-width:700px) {
+    .menu {
+        width: 45px;
+    }
+
+    .introduce-container h1 {
+        font-size: 50px;
+    }
+
+    .introduce-container h3 {
+        font-size: 20px;
+    }
+
+    .form form {
+        width: 400px;
+    }
+
+    .content-about-me h1 {
+        font-size: 80px;
+    }
+
+}
+
+
+/* phone */
+@media (max-width: 700px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    .btn-subcribe {
+        font-size: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .menu {
+        margin: 0px 15px 0px 15px;
+        width: 40px;
+    }
+
+    .header {
+        padding-left: 15px;
+
+    }
+
+    .form form {
+        width: 300px;
+    }
+
+    .introduce-container h1 {
+        font-size: 45px;
+    }
+
+    .introduce-container h3 {
+        font-size: 17px;
+    }
+
+    .introduce-container h4 {
+        font-size: 17px;
+    }
+
+    .btn-let_start {
+        width: 75px;
+    }
+
+    .content-about-me h1 {
+        font-size: 60px;
+    }
+
+    .skills-heading {
+        font-size: 40px;
+    }
+
+    .box {
+        width: 320px;
+    }
+}
+
+@media (max-width: 455px) {
+    .introduce-container h1 {
+        font-size: 35px;
+    }
+
+    .introduce-container h3 {
+        font-size: 15px;
+    }
+
+    .introduce-container h4 {
+        font-size: 15px;
+    }
+
+    .form form {
+        width: 250px;
+    }
+
+    .btn-let_start {
+        width: 60px;
+        font-size: 12px;
+    }
 }
